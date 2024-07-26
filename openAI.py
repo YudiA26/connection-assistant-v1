@@ -2,6 +2,8 @@ from openai import OpenAI
 import os 
 import logging
 import time
+import json
+
 
 api_key = os.environ.get("API_GPT")
 client = OpenAI(api_key=api_key, default_headers={"OpenAI-Beta": "assistants=v1"})
